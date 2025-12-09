@@ -20,7 +20,10 @@ __pycache__/
 # 3. Archivos Grandes y Binarios (Data Science - CRÍTICO)
 # ---------------------------------------------
 # IGNORAR DATOS CRUDOS DE OLIST (Son grandes y no se versionan)
-data/raw/
+data/raw/*
+
+# EXCEPCIÓN: Forzar el rastreo del archivo .gitkeep
+!data/raw/.gitkeep
 
 # IGNORAR MODELOS ENTRENADOS (.pkl, .joblib, etc. Son archivos binarios grandes)
 /models/
