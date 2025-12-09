@@ -23,7 +23,7 @@ __pycache__/
 data/raw/
 
 # IGNORAR MODELOS ENTRENADOS (.pkl, .joblib, etc. Son archivos binarios grandes)
-models/
+/models/
 
 # ---------------------------------------------
 # 4. Metadatos del Sistema y Editor
