@@ -1,10 +1,36 @@
-# Entorno virtual de Python
+# ---------------------------------------------
+# 1. Entornos Virtuales
+# ---------------------------------------------
+# Cubre las tres variantes de nombres que tienes:
 .venv/
 venv/
 env/
 
-# Archivos de caché y compilación
+# ---------------------------------------------
+# 2. Archivos de Caché y Compilación
+# ---------------------------------------------
 __pycache__/
 *.pyc
 *.pyo
+
+# Archivos de caché de Jupyter/IPython Notebooks
+.ipynb_checkpoints/
+
+# ---------------------------------------------
+# 3. Archivos Grandes y Binarios (Data Science - CRÍTICO)
+# ---------------------------------------------
+# IGNORAR DATOS CRUDOS DE OLIST (Son grandes y no se versionan)
+data/raw/
+
+# IGNORAR MODELOS ENTRENADOS (.pkl, .joblib, etc. Son archivos binarios grandes)
+models/
+
+# ---------------------------------------------
+# 4. Metadatos del Sistema y Editor
+# ---------------------------------------------
+# Ignorar archivos de metadatos de macOS
+.DS_Store
+
+# Ignorar archivos de configuración de editores (opcional para VS Code)
+.vscode/
 
