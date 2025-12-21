@@ -17,3 +17,12 @@ def convert_dates(df: pd.DataFrame, date_cols: list) -> pd.DataFrame:
                 errors='coerce'
             )
     return df
+
+def merge_dataframes(df_01, df_02, on=None, how=None, left_on=None, right_on=None, suffixes=(None, None)):
+
+    if left_on and right_on:
+        return pd.merge(df_01, df_02, left_on=left_on, right_on=right_on, how=how, suffixes=suffixes)
+    
+    else:
+        return pd.merge(df_01, df_02, on=on, how=how)
+
