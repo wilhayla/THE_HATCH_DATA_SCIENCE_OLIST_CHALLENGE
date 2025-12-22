@@ -2,6 +2,10 @@
 
 import pandas as pd
 
+def load_data(ruta):
+    df = pd.read_csv(ruta)
+    return df
+
 # 1. DEFINIR LA CONSTANTE FUERA DEL CUERPO DE LA FUNCIÓN
 #    Así es accesible inmediatamente y es una constante del módulo.
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
@@ -25,4 +29,3 @@ def merge_dataframes(df_01, df_02, on=None, how=None, left_on=None, right_on=Non
     
     else:
         return pd.merge(df_01, df_02, on=on, how=how)
-
